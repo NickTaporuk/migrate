@@ -4,23 +4,23 @@
 
 ### Download pre-built binary (Windows, MacOS, or Linux)
 
-[Release Downloads](https://github.com/golang-migrate/migrate/releases)
+[Release Downloads](https://github.com/NickTaporuk/migrate/releases)
 
 ```bash
-$ curl -L https://github.com/golang-migrate/migrate/releases/download/$version/migrate.$platform-amd64.tar.gz | tar xvz
+$ curl -L https://github.com/NickTaporuk/migrate/releases/download/$version/migrate.$platform-amd64.tar.gz | tar xvz
 ```
 
 ### MacOS
 
 ```bash
-$ brew install golang-migrate
+$ brew install NickTaporuk
 ```
 
 ### Linux (*.deb package)
 
 ```bash
-$ curl -L https://packagecloud.io/golang-migrate/migrate/gpgkey | apt-key add -
-$ echo "deb https://packagecloud.io/golang-migrate/migrate/ubuntu/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/migrate.list
+$ curl -L https://packagecloud.io/NickTaporuk/migrate/gpgkey | apt-key add -
+$ echo "deb https://packagecloud.io/NickTaporuk/migrate/ubuntu/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/migrate.list
 $ apt-get update
 $ apt-get install -y migrate
 ```
@@ -30,16 +30,16 @@ $ apt-get install -y migrate
 #### Versioned
 
 ```bash
-$ go get -u -d github.com/golang-migrate/migrate/cmd/migrate
-$ cd $GOPATH/src/github.com/golang-migrate/migrate/cmd/migrate
+$ go get -u -d github.com/NickTaporuk/migrate/cmd/migrate
+$ cd $GOPATH/src/github.com/NickTaporuk/migrate/cmd/migrate
 $ git checkout $TAG  # e.g. v4.1.0
-$ go build -tags 'postgres' -ldflags="-X main.Version=$(git describe --tags)" -o $GOPATH/bin/migrate github.com/golang-migrate/migrate/cmd/migrate
+$ go build -tags 'postgres' -ldflags="-X main.Version=$(git describe --tags)" -o $GOPATH/bin/migrate github.com/NickTaporuk/migrate/cmd/migrate
 ```
 
 #### Unversioned
 
 ```bash
-$ go get -tags 'postgres' -u github.com/golang-migrate/migrate/cmd/migrate
+$ go get -tags 'postgres' -u github.com/NickTaporuk/migrate/cmd/migrate
 ```
 
 #### Notes
@@ -51,7 +51,7 @@ with the appropriate database tag(s) for the databases desired.  The tags
 correspond to the names of the sub-packages underneath the
 [`database`](../database) package.
 1. Similarly to the database build tags, if you need to support other sources, use the appropriate build tag(s).
-1. Support for build constraints will be removed in the future: https://github.com/golang-migrate/migrate/issues/60
+1. Support for build constraints will be removed in the future: https://github.com/NickTaporuk/migrate/issues/60
 
 ## Usage
 
