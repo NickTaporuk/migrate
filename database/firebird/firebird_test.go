@@ -18,7 +18,7 @@ import (
 	"github.com/NickTaporuk/migrate/v4/dktesting"
 	_ "github.com/NickTaporuk/migrate/v4/source/file"
 
-	_ "github.com/nakagami/firebirdsql"
+	_ "github.com/NickTaporuk/firebirdsql"
 )
 
 const (
