@@ -2,7 +2,7 @@ module github.com/NickTaporuk/migrate/v4
 
 require (
 	cloud.google.com/go v0.37.4
-	github.com/NickTaporuk/firebirdsql v0.0.0-20190310045651-3c02a58cfed8
+	github.com/NickTaporuk/firebirdsql v1.0.0
 	github.com/aws/aws-sdk-go v1.17.7
 	github.com/bitly/go-hostpool v0.0.0-20171023180738-a3a6125de932 // indirect
 	github.com/bmizerany/assert v0.0.0-20160611221934-b7ed37b82869 // indirect
@@ -24,7 +24,6 @@ require (
 	github.com/hashicorp/golang-lru v0.5.1 // indirect
 	github.com/jackc/fake v0.0.0-20150926172116-812a484cc733 // indirect
 	github.com/jackc/pgx v3.2.0+incompatible // indirect
-	github.com/kardianos/osext v0.0.0-20190222173326-2bc1f35cddc0 // indirect
 	github.com/konsorten/go-windows-terminal-sequences v1.0.2 // indirect
 	github.com/kr/pretty v0.1.0 // indirect
 	github.com/kshvakov/clickhouse v1.3.5
@@ -33,7 +32,6 @@ require (
 	github.com/morikuni/aec v0.0.0-20170113033406-39771216ff4c // indirect
 	github.com/pkg/errors v0.8.1 // indirect
 	github.com/satori/go.uuid v1.2.0 // indirect
-	github.com/shopspring/decimal v0.0.0-20180709203117-cd690d0c9e24 // indirect
 	github.com/sirupsen/logrus v1.4.1 // indirect
 	github.com/stretchr/testify v1.3.0
 	github.com/tidwall/pretty v0.0.0-20180105212114-65a9db5fad51 // indirect
